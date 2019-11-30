@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
   def cart
     #returns the user's shopping cart, an initially empty array
     #creates a cart in the session if one doesn't exist
+    # returns the existing cart if one already exists
 
     session[:cart] ||= []
   end
